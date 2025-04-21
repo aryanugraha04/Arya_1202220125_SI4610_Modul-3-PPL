@@ -20,3 +20,4 @@ composer require laravel/dusk --dev
 php artisan dusk:install
 
 Jalankan proyek laravel dengan perintah php artisan serve & npm run dev pada terminal/cmd yang berbeda
+# Arya_1202220125_SI4610_Modul-3-PPL
