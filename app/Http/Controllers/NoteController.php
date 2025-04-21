@@ -62,6 +62,10 @@ class NoteController extends Controller
     {
         $note_edit = Note::findOrFail($id);
 
+        if ($note_edit->penulis_id !== auth()->id()) {
+            abort(403, 'Unauthorized action.');
+        }
+
         return view('Notes.edit', compact('note_edit'));
     }
 
